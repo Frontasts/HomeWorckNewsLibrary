@@ -39,6 +39,11 @@ namespace HomeWorckNewsLibrary
             return _name;
         }
 
+        public int GetCountArticle()
+        {
+            return _articles.Count;
+        }
+
         public List<Article> GetCopyAllArticles()
         {
             List<Article> articles = new List<Article>(_articles);
