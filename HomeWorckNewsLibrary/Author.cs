@@ -14,5 +14,12 @@ namespace HomeWorckNewsLibrary
         {
             _name = name;
         }
+
+        public Article WriteArticle(string title, string content)
+        {
+            Article article = new Article(title, content, this);
+
+            return article;
+        }
     }
 }
