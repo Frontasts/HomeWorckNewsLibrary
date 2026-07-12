@@ -21,5 +21,10 @@ namespace HomeWorckNewsLibrary
 
             return article;
         }
+
+        public string GetName()
+        {
+            return _name;
+        }
     }
 }
