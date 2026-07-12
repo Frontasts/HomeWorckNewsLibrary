@@ -24,6 +24,11 @@ namespace HomeWorckNewsLibrary
                 return false;
             }
 
+            if (article.GetIsPublished() == false)
+            {
+                return false;
+            }
+            
             _articles.Add(article);
             article.Publish();
             return true;
