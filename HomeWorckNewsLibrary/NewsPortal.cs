@@ -28,5 +28,16 @@ namespace HomeWorckNewsLibrary
             article.Publish();
             return true;
         }
+
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public List<Article> GetCopyArticles()
+        {
+            List<Article> articles = new List<Article>(_articles);
+            return articles;
+        }
     }
 }
