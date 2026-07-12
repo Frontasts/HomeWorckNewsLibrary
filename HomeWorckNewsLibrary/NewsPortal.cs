@@ -39,7 +39,7 @@ namespace HomeWorckNewsLibrary
             return _name;
         }
 
-        public List<Article> GetCopyArticles()
+        public List<Article> GetCopyAllArticles()
         {
             List<Article> articles = new List<Article>(_articles);
             return articles;
