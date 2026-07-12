@@ -16,5 +16,17 @@ namespace HomeWorckNewsLibrary
             _name = name;
             _articles = new List<Article>();
         }
+
+        public bool PublishArticle(Article article)
+        {
+            if(article == null)
+            {
+                return false;
+            }
+
+            _articles.Add(article);
+            article.Publish();
+            return true;
+        }
     }
 }
