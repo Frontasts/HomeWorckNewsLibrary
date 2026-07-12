@@ -8,5 +8,13 @@ namespace HomeWorckNewsLibrary
 {
     public class NewsPortal
     {
+        private string _name;
+        private List<Article> _articles;
+
+        public NewsPortal(string name)
+        {
+            _name = name;
+            _articles = new List<Article>();
+        }
     }
 }
