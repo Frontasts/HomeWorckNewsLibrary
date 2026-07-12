@@ -33,5 +33,24 @@ namespace HomeWorckNewsLibrary
             Console.WriteLine($"Статья \"{_title}\" опубликована автором {_author}");
             return true;
         }
+
+        public string GetTitle()
+        {
+            return _title;
+        }
+
+        public string GetContent()
+        {
+            return _content;
+        }
+
+        public Author GetAuthor()
+        {
+            return _author;
+        }
+        public bool GetIsPublished()
+        {
+            return _isPublished;
+        }
     }
 }
