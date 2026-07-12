@@ -20,5 +20,18 @@ namespace HomeWorckNewsLibrary
             _author = author;
             _isPublished = false;
         }
+
+        public bool Publish()
+        {
+            if(_isPublished == false)
+            {
+                return false;
+            }
+
+            _isPublished = true;
+            Console.WriteLine();
+            Console.WriteLine($"Статья \"{_title}\" опубликована автором {_author}");
+            return true;
+        }
     }
 }
